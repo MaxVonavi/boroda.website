@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Host: https://boroda.website/
+Sitemap: https://boroda.website/sitemap.xml
