@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="145">
+    <defs>
+        <filter id="a" width="120" height="145" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="15" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="4"/>
+            <feFlood flood-color="#252525" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".07" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <path fill="#EDECEC" fill-rule="evenodd" d="M44.009 113.559c10.153-1.128 20.275-4.646 28.086-8.971 7.938-4.369 13.566-9.544 17.666-14.996 4.121-5.475 6.712-11.226 9.068-17.277 2.272-6.053 4.309-12.406 5.391-19.138.996-6.731 1.255-13.428-.615-19.943-1.793-6.489-5.716-12.796-11.314-18.084C81.139 4.298 63.383-1.604 49.308.377c-6.881.997-13.17 3.514-17.641 7.153-4.524 3.639-7.231 8.399-8.148 13.86-.97 5.461-.151 11.623 1.181 18.044 1.28 6.42 3.071 13.099 2.846 19.573-.043 6.722-1.875 12.245-4.406 18.074-2.461 5.743-5.621 11.792-6.708 17.56-1.13 5.729-.188 11.18 4.543 14.813 4.575 3.64 12.939 5.463 23.034 4.105z" filter="url(#a)"/>
+</svg>
